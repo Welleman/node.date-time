@@ -21,6 +21,8 @@ console.log(format("y-M-d H:m:s")); // 16-5-18 15:45:8
 <script src="./node_modules/node.date-time/index.js"></script>
 <script>
 console.log(format("Y-MM-dd HH:mm:ss", new Date())); // 2016-05-03 01:01:01
+console.log(format("Y-MM-dd HH:mm:ss", "2016-5-5 1:1:1"); // 2016-05-03 01:01:01
+console.log(format("Y-MM-dd HH:mm:ss", "20160505010101"); // 2016-05-03 01:01:01
 </script>
 ```
 

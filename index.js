@@ -4,6 +4,9 @@
 const leftpad = require("left-pad");
 (function () {
     const formatter = function (rule, date = (new Date())) {
+        if (date.constructor !== Date) {
+            date = new Date(Date.parse(date));
+        }
         return (
             rule
                 .replace(/yyyy|Y/g, date.getFullYear())
@@ -31,6 +34,4 @@ const leftpad = require("left-pad");
     } else {
         this.format = formatter;
     }
-
-    console.log(formatter("y-M-d H:m:s"))
 }());
