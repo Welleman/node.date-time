@@ -20,9 +20,9 @@ const leftpad = require("left-pad");
                 .replace(/H|h/g, date.getHours())
                 .replace(/ms/g, date.getMilliseconds())
                 .replace(/mm/g, leftpad(String(date.getMinutes()), 2, "0"))
-                .replace(/m/g, leftpad(String(date.getMinutes()), 3, "0"))
-                .replace(/ss/g, leftpad(String(date.getSeconds()), 2, "0"))
-                .replace(/s/g, date.getSeconds())
+                .replace(/m/g, leftpad(String(date.getMinutes()), 2, "0"))
+                .replace(/SS/g, leftpad(String(date.getSeconds()), 2, "0"))
+                .replace(/S/g, date.getSeconds())
         );
     };
     Date.prototype.format = function (rule) {

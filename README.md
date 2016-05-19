@@ -20,9 +20,9 @@ console.log(format("y-M-d H:m:s")); // 16-5-18 15:45:8
 ```js
 <script src="./node_modules/node.date-time/index.js"></script>
 <script>
-console.log(format("Y-MM-dd HH:mm:ss", new Date())); // 2016-05-03 01:01:01
-console.log(format("Y-MM-dd HH:mm:ss", "2016-5-5 1:1:1"); // 2016-05-03 01:01:01
-console.log(format("Y-MM-dd HH:mm:ss", "20160505010101"); // 2016-05-03 01:01:01
+console.log(format("Y-MM-dd HH:mm:SS", new Date())); // 2016-05-03 01:01:01
+console.log(format("Y-MM-dd HH:mm:SS", "2016-5-5 1:1:1"); // 2016-05-03 01:01:01
+console.log(format("Y-MM-dd HH:mm:SS ms", "20160505010101"); // 2016-05-03 01:01:01 000
 </script>
 ```
 
@@ -61,10 +61,10 @@ console.log(format("Y-MM-dd HH:mm:ss", "20160505010101"); // 2016-05-03 01:01:01
 - `m`
     - A minute
     - 0-59
-- `ss`
+- `SS`
     - A two digit representation of a second
     - 00-59
-- `s`
+- `S`
     - A second
     - 0-59
 - `ms`
