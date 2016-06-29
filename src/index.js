@@ -3,8 +3,7 @@
  */
 const leftpad = require("left-pad");
 (function () {
-    const formatter = function (rule, date) {
-        date = date || new Date();
+    const formatter = function (rule, date = new Date()) {
         if (date.constructor !== Date) {
             date = new Date(Date.parse(date));
         }
