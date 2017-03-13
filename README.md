@@ -26,6 +26,13 @@ console.log(format("Y-MM-dd HH:mm:SS ms", "20160505010101"); // 2016-05-03 01:01
 </script>
 ```
 
+## Api
+- Date.format(format,utc)
+  - format: String, "Y-MM-dd HH:mm:SS",
+  - utc: Boolean, isUTC
+    - default: false
+- formatter(format,date,utc)
+
 ## Format
 
 - `yyyy`,`Y`
