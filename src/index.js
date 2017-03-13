@@ -16,7 +16,7 @@ const leftpad = require("left-pad");
       .replace(/HH|hh/g, leftpad(String((utc ? date.getUTCHours() : date.getHours())), 2, "0"))
       .replace(/H|h/g, utc ? date.getUTCHours() : date.getHours())
       .replace(/ms/g, utc ? date.getUTCMilliseconds() : date.getMilliseconds())
-      .replace(/mm/g, leftpad(String((utc ? date.getMinutes() : date.getMinutes())), 2, "0"))
+      .replace(/mm/g, leftpad(String((utc ? date.getUTCMinutes() : date.getMinutes())), 2, "0"))
       .replace(/m/g, leftpad(String((utc ? date.getUTCMinutes() : date.getMinutes())), 2, "0"))
       .replace(/SS/g, leftpad(String((utc ? date.getUTCSeconds() : date.getSeconds())), 2, "0"))
       .replace(/S/g, utc ? date.getUTCSeconds() : date.getSeconds())
@@ -24,7 +24,7 @@ const leftpad = require("left-pad");
   };
 
   Date.prototype.format = function (rule, utc = false) {
-    return formatter(rule, this);
+    return formatter(rule, this, utc);
   };
 
   if (typeof exports === "object") {
