@@ -1,5 +1,7 @@
 # node.date-time
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/yeliex/node.date-time.svg)](https://greenkeeper.io/)
+
 [![npm](https://img.shields.io/npm/v/node.date-time.svg?style=flat-square)](https://www.npmjs.com/package/node.date-time)
 
 date-time formatter for javascript
